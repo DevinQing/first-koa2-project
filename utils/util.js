@@ -1,3 +1,4 @@
+const log4js = require('./log4js')
 /**
  * 通用工具函数
  */
@@ -29,6 +30,24 @@ module.exports = {
         pageSize
       },
       skipIndex
+    }
+  },
+  // 封装请求成功时候的函数
+  success(data = '', msg = '', code = CODE.SUCCESS) {
+    log4js.debug(data)
+    return {
+      code,
+      data,
+      msg
+    }
+  },
+  // 封装请求失败的函数
+  fail(data = '', msg = '', code = CODE.BUSINESS_ERROR) {
+    log4js.debug(msg)
+    return {
+      code,
+      data,
+      msg
     }
   }
 }

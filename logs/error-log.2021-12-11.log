@@ -1,0 +1,53 @@
+[2021-12-11T09:19:50.171] [ERROR] error - 错误信息
+[2021-12-11T09:20:15.942] [ERROR] error - error信息
+[2021-12-11T09:21:32.299] [ERROR] error - {
+  request: {
+    method: 'GET',
+    url: '/users/bar',
+    header: {
+      host: 'localhost:3000',
+      connection: 'keep-alive',
+      'cache-control': 'max-age=0',
+      'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
+      'sec-ch-ua-mobile': '?0',
+      'sec-ch-ua-platform': '"Windows"',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+      'sec-fetch-site': 'none',
+      'sec-fetch-mode': 'navigate',
+      'sec-fetch-user': '?1',
+      'sec-fetch-dest': 'document',
+      'accept-encoding': 'gzip, deflate, br',
+      'accept-language': 'zh-CN,zh;q=0.9'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: [Object: null prototype] {}
+  },
+  app: { subdomainOffset: 2, proxy: false, env: 'development' },
+  originalUrl: '/users/bar',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+[2021-12-11T09:23:10.712] [ERROR] error - ReferenceError: next is not defined
+    at D:\我的论文项目\manager-server\app.js:32:3
+    at dispatch (D:\我的论文项目\manager-server\node_modules\koa-compose\index.js:42:32)
+    at views (D:\我的论文项目\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\我的论文项目\manager-server\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\我的论文项目\manager-server\node_modules\koa-static\index.js:53:15)
+    at async bodyParser (D:\我的论文项目\manager-server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-12-11T17:09:01.675] [ERROR] error - TypeError: Cannot convert object to primitive value
+    at D:\我的论文项目\manager-server\app.js:34:59
+    at dispatch (D:\我的论文项目\manager-server\node_modules\koa-compose\index.js:42:32)
+    at views (D:\我的论文项目\manager-server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\我的论文项目\manager-server\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\我的论文项目\manager-server\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\我的论文项目\manager-server\node_modules\koa-compose\index.js:42:32)
+    at filter (D:\我的论文项目\manager-server\node_modules\koa-json\index.js:25:12)
+    at dispatch (D:\我的论文项目\manager-server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\我的论文项目\manager-server\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
